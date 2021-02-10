@@ -1,0 +1,60 @@
+:root{
+    --color_fondo: rgb(35, 42, 51);
+    --color_superior: #eee;
+}
+
+#btn-mas{
+    display: none;
+}
+.button-float{
+    position: fixed;
+    z-index: 20;
+    bottom: 1.65rem;
+    right: 1.65rem;
+}
+.opciones a, .button-desplegable{
+    display: block;
+    text-decoration: none;
+    background: var(--color_fondo);
+    color: var(--color_superior);
+    width: 3.4375rem;
+    height: 3.4375rem;
+    line-height: 3.4375rem;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0.25rem 0.25rem 0.25rem 0.125rem gray;
+    transition: all 500ms ease; 
+}
+
+.opciones a:hover{
+    background:var(--color_superior);
+    color: var(--color_fondo);
+    font-size: 1.5625rem;
+}
+
+.opciones a{
+    margin-bottom: -0.9375rem;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .opciones a{
+    margin-bottom: 0.625rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.button-desplegable{
+    cursor: pointer;
+    font-size: 1.875rem;
+}
+.button-desplegable:hover{
+    background: var(--color_superior);
+    color: var(--color_fondo);
+    font-size: 2.2rem;
+}
+
+#btn-mas:checked~ .btn-mas .button-desplegable{
+    transform: rotate(175deg);
+    font-size: 1.875rem;
+    box-shadow: 0.0625rem 0.0625rem 0.5625rem 0.0625rem rgb(97, 95, 95);
+}

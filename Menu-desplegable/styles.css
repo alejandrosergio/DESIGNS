@@ -1,0 +1,68 @@
+#btn-menu__layout{
+    display: none;
+}
+
+.container-menu{
+    z-index: 20;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu__layout:checked~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 21.875rem;
+    background: var(--color_fondo);
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+#btn-menu__layout:checked~ .container-menu{
+    transform: translateX(0%);
+} 
+
+:root{
+    --color_fondo: rgb(35, 42, 51);
+    --color_superior: #eee;
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 1.25rem;
+    color: var(--color_superior);
+    border-left: 0.3125rem solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 0.6125rem solid var(--color_fondo);
+    background: var(--color_superior);
+    color: var(--color_fondo);
+    font-size: 1.3rem;
+}   
+.cont-menu label{
+    position: absolute;
+    right: 0.9375rem;
+    top: 0.3125rem;
+    color: var(--color_superior);
+    cursor: pointer;
+    font-size: 1.875rem;
+}
+
+.main-layout>.header-layout>.item-layout>label>img{
+    border-radius: 50%;
+}
