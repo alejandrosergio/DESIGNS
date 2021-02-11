@@ -4,6 +4,72 @@
     box-sizing: border-box;
 }
 
+/* SLIDER */
+
+/* Tamaño del slider esto puede variar */
+.container-slider{
+    width: 100%;
+    max-width: 44rem;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 0.625em #fff,  /* Margen */
+                0 0.625rem 2.5em #fff; /* Sombra */
+    position: relative;
+}
+
+/* Mide 400% por la cantidad de imagenes */
+.slider{
+    display: flex;
+    width: 600%;
+    height: 100vh;
+    margin-left: -100%;
+}
+
+/* De los 400% cada imagen ocupara un 100%*/
+.slider__section{
+    width: 100%;
+}
+
+.slider__img{
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: fill;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background:black;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.875em;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 36px;
+    color: #fff;
+}
+
+.slider__btn:hover{
+    background: #fff;
+    color: black;
+    line-height: 36px;
+}
+
+.slider__btn--left{
+    left: 0.625rem;
+}
+
+.slider__btn--rigth{
+    right: 0.625rem;
+}
+/* FORM */
+
 section{
     position: relative;
     width: 100%;
@@ -11,7 +77,7 @@ section{
     display: flex;
 }
 
-section .imgBx{
+/* section .imgBx{
     position: relative;
     width: 50%;
     height: 100%;
@@ -35,7 +101,7 @@ section .imgBx img{
     width: 100%;
     height: 100%;
     object-fit: fill;
-}
+} */
 
 section .contentBx{
     display: flex;
@@ -122,8 +188,8 @@ section .contentBx .formBx .inputBx p a{
     color: #ff4584;
 }
 
-@media (max-width: 780px){
-    section .imgBx{
+@media (max-width: 1000px){
+    section .container-slider{
         position: absolute;
         top: 0;
         left: 0;
@@ -146,5 +212,23 @@ section .contentBx .formBx .inputBx p a{
         margin: 50px;
     }
 
+    .slider__btn{
+        display: none;
+    }
 
+    .alcaldia{
+        display: none;
+    }
+
+}
+
+.alcaldia{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.alcaldia img{
+    position: absolute;
+    height: 100px;
+    width: 300px;margin-left: 44em;
 }
