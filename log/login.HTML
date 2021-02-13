@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>LOGIN MALLA VIAL</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     <section>
@@ -39,9 +40,9 @@
         <div class="contentBx">
             <div class="formBx">
                 <h2>Malla Vial</h2>
-                <form>
+                <form action="validate.php" method="POST">
                     <div class="inputBx">
-                        <span>Rol del Usuario</span>
+                        <span><i class="fas fa-address-card"></i> Rol del Usuario</span>
                         <select required>
                             <option>Seleccione Rol</option>
                             <option>Administrador</option>
@@ -49,19 +50,21 @@
                             <option>Gestor Vial</option>
                             <option>Jefe Bodega</option>
                         </select>
+                        
                         <div class="inputBx">
-                            <span>Correo Electronico</span>
+                            <span><i class="fas fa-envelope"></i> Correo Electronico</span>
                             <input type="email" required>
                         </div>
                         <div class="inputBx">
-                            <span>Contraseña</span>
+                            <span><i class="fas fa-lock"></i> Contraseña</span>
                             <input type="password" required>
                         </div>
-                        <div class="remember">
-                            <label><input type="checkbox">  Recordarme</label>
+                        <div class="checkbox remember">
+                            <input type="checkbox" class="input-assumpte" id="input-confidencial" />
+                            <label for="input-confidencial" style="font-size: 17px;"> Recordarme </label>
                         </div>
                         <div class="inputBx">
-                            <input type="submit" value="ENTRAR">
+                            <button class="btn"> Ingresar </button>
                         </div>
                         <div class="inputBx">
                             <p> Olvidaste tus Datos? <a href="#"> Click acá</a></p>
@@ -70,10 +73,20 @@
                 </form>
             </div>
         </div>
-        <div class="alcaldia">
-            <img src="img/alcaldia.jpg">
-        </div>
     </section>
-<script src="script.js"></script>
+    <div class="button-float">
+        <input type="checkbox" id="btn-mas">
+        <div class="opciones">
+            <a href="https://www.facebook.com/">Y</a>
+            <a href="https://www.facebook.com/">X</a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="button-desplegable">?</label>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
