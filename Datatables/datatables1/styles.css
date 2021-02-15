@@ -1,0 +1,16 @@
+
+/*estilos para la tabla*/
+table th,tfoot{
+    text-align: center;
+    background-color: #007bff !important;
+    color: white;
+}
+
+td{
+    text-align: center;
+}
+
+/*para alinear los botones y cuadro de busqueda*/
+.btn-group, .btn-group-vertical {
+    position: absolute !important;
+}
