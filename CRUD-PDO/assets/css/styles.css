@@ -1,0 +1,46 @@
+/* TABLA STYLE */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+
+.container_table{
+    width: 100%;
+    display: flex;
+}
+
+table{
+    text-align: center;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem 0.125rem rgba(128, 128, 128, 0.699);
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+table>tbody>tr>td>button{
+    margin: 0 .5em;
+    border-radius: 10px;
+}
+
+table>tfoot>tr>td{
+    background: rgb(50, 146, 255);
+    color: #fff;
+    border-radius: 10px;
+    align-content: center;
+}
+
+table>tfoot>tr>td:hover{
+    background: rgb(16, 108, 214);
+    color: #fff;
+}
