@@ -1,5 +1,5 @@
 $(document).ready(function() {    
-    $('#example').DataTable({        
+    $('#sergio_el_rey_del_ajax').DataTable({        
         language: {
                 "lengthMenu": "Mostrar _MENU_ registros",
                 "zeroRecords": "No se encontraron resultados",
