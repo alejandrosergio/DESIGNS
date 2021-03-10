@@ -1,0 +1,29 @@
+
+
+/*estilos para la tabla*/
+table th {
+    background-color: #000000 !important;
+    color: white;
+}
+table>tbody>tr>td {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+/*para alinear los botones y cuadro de busqueda*/
+.btn-group, .btn-group-vertical {
+    position: absolute !important;
+}
+.dataTables_info,.dataTables_length{
+    display: none !important;
+}
+.pagination>li{
+    text-align: center;
+    width: 100%;
+}
+
+.btn_tf{
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+}
