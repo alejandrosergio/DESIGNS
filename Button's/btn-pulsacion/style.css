@@ -1,0 +1,81 @@
+.call{
+    margin: 60px auto;
+    width: 200px;
+    height: 200px;
+    background: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    animation: signal 1s infinite;
+}
+.call i{
+    font-size: 50px;
+}
+
+@keyframes signal{
+    0%{
+        box-shadow: 0 0 0 0 purple;
+    }
+    100%{
+        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
+
+.btn-primary{
+    animation: btn-primary 1s infinite;
+}
+
+.btn-warning{
+    animation: btn-warning 1s infinite;
+}
+
+.btn-danger{
+    animation: btn-danger 1s infinite;
+}
+
+.btn{
+    margin: auto .5em;
+}
+
+.btn-info{
+    animation: btn-info 1s infinite;
+}
+
+@keyframes btn-primary{
+    0%{
+        box-shadow: 0 0 0 0 #0d6efd;
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes btn-warning{
+    0%{
+        box-shadow: 0 0 0 0 #ffc107;
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes btn-danger{
+    0%{
+        box-shadow: 0 0 0 0 #dc3545;
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes btn-info{
+    0%{
+        box-shadow: 0 0 0 0 #0dcaf0;
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+}
