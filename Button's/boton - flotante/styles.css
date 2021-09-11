@@ -1,6 +1,10 @@
 :root{
-    --color_fondo: rgb(35, 42, 51);
-    --color_superior: #eee;
+    --color_fondo: rgb(255, 255, 255);
+    --color_superior: hsl(0, 0%, 0%);
+}
+
+body{
+    background: rgb(0, 64, 255);
 }
 
 #btn-mas{
